@@ -21,3 +21,8 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/createLab', function ()
+{
+    return view('createLab');
+});
+Route::resource('LabsController');
