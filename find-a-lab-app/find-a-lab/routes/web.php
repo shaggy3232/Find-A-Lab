@@ -21,8 +21,9 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+Route:: get('/Labs', 'LabsController@index') -> name('Labs');
 Route::get('/createLab', function ()
 {
     return view('createLab');
 });
-Route::resource('LabsController');
+Route::resource( 'labs', 'LabsController');

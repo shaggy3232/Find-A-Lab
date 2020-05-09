@@ -7,9 +7,9 @@
         </br>
         <form method ="post" action = "{{ url('labs') }}"> 
         {{csrf_field()}}
-            <input type ="text" name = "name" class = "form-control" placeholder = "Enter Lab name"/>
+            <input type ="text" name = "Name" class = "form-control" placeholder = "Enter Lab name"/>
 
-            <input type ="text" name = "location" class = "form-control" placeholder = "Enter Lab location"/>
+            <input type ="text" name = "Location" class = "form-control" placeholder = "Enter Lab location"/>
             
             <input type ="submit" name = "submit"/>
 
