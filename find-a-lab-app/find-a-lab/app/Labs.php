@@ -6,5 +6,5 @@ use Illuminate\Database\Eloquent\Model;
 
 class Labs extends Model
 {
-    //
+    protected $fillable = ['Name', 'Location'];
 }

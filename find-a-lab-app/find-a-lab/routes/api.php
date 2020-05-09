@@ -17,3 +17,16 @@ use Illuminate\Support\Facades\Route;
 Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
+
+Use App\Labs;
+ 
+Route::get('labs', 'LabsController@index');
+ 
+Route::get('labs/{lab}', 'LabsController@show');
+
+
+Route::post('labs', 'Labcontroller@store');
+
+Route::put('labs/{lab}', 'LabsContronller@update');
+
+Route::delete('labs/{lab}', 'LabsController@delete');
