@@ -17,7 +17,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route :: get ('/Register/user', function(){
 
-    return view ('Register-User');
-});
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
